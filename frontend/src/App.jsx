@@ -2,25 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import MovieCard from './components/MovieCard'
 function App() {
 
 
   return (
    <>
-   
-    <Text display= "Hello World"/ >
-    <Text display= "Juan Sucks Ass"/ >
+     <MovieCard movie = {{title: "Juan's Movie", release_date: "2024", }} />
+     <MovieCard movie = {{title: "pleb's Movie", release_date: "2025", }} />
    </>
   )
-}
-
-function Text({display}){
-  return(
-    <div>
-      <p>{display}</p>
-    </div>
-  );
 }
 
 export default App
